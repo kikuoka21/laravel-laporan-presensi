@@ -10,6 +10,7 @@ namespace App\Http\Controllers;
 
 use App\Modul\Panggilan;
 use App\Modul\tool;
+use PDF;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -35,6 +36,7 @@ class perhari
         }
 
     }
+
     public function carikelas(Request $request)
     {
 
@@ -52,13 +54,13 @@ class perhari
 
         if ($input->code == 'OK4') {
             $flag = '0';
-        }else if ($input->code == 'TOKEN2' || $input->code == 'TOKEN1') {
+        } else if ($input->code == 'TOKEN2' || $input->code == 'TOKEN1') {
             $request->session()
                 ->flush();
             $tool = new tool();
-            session()->flash('notif',$tool->pesan($input->code));
+            session()->flash('notif', $tool->pesan($input->code));
             return redirect('auth/login');
-        }else{
+        } else {
             session()->flash('notif', $input->code);
             $flag = '1';
         }
@@ -103,18 +105,19 @@ class perhari
                 'id_kelas' => $id,
                 'type' => 'www'
             ]);
+            $flag = '0';
+            if ($input->code != 'OK4') {
+                if ($input->code == 'TOKEN2' || $input->code == 'TOKEN1') {
+                    $request->session()
+                        ->flush();
+                    $tool = new tool();
+                    session()->flash('notif', $tool->pesan($input->code));
+                    return redirect('auth/login');
+                } else {
+                    session()->flash('notif', $input->code);
+                    $flag = '1';
 
-            if ($input->code == 'OK4') {
-                $flag = '0';
-            }else if ($input->code == 'TOKEN2' || $input->code == 'TOKEN1') {
-                $request->session()
-                    ->flush();
-                $tool = new tool();
-                session()->flash('notif',$tool->pesan($input->code));
-                return redirect('auth/login');
-            }else{
-                session()->flash('notif', $input->code);
-                $flag = '1';
+                }
             }
             $result = [
                 'nama' => $request->session()->get("nama"),
@@ -122,7 +125,52 @@ class perhari
                 'isi' => $flag,
                 'data' => $input,
             ];
+
             return view('page.bulanan')->with('result', $result);
+        } else {
+            return view('login');
+        }
+
+    }
+
+    public function data2(Request $request, $id, $tanggal)
+    {
+        if ($request->session()->has('username') && $request->session()->has('token')) {
+
+
+            $curl = new Panggilan();
+            $input = $curl->SendRequest("api/admin/laporan-bulan", [
+                'x1d' => $request->session()->get("username"),
+                'token' => $request->session()->get("token"),
+                'key' => $request->ip(),
+                'tgl' => $tanggal,
+                'id_kelas' => $id,
+                'type' => 'www'
+            ]);
+            $flag = '0';
+            if ($input->code != 'OK4') {
+                if ($input->code == 'TOKEN2' || $input->code == 'TOKEN1') {
+                    $request->session()
+                        ->flush();
+                    $tool = new tool();
+                    session()->flash('notif', $tool->pesan($input->code));
+                    return redirect('auth/login');
+                } else {
+                    session()->flash('notif', $input->code);
+                    $flag = '1';
+
+                }
+            }
+            $result = [
+                'nama' => $request->session()->get("nama"),
+                'hari_ini' => (new \App\Modul\tool)->gettanggal(),
+                'isi' => $flag,
+                'data' => $input,
+            ];
+            $pdf = PDF::loadView('page.bulanan', compact('result'))->setPaper('a4', 'landscape');
+            return $pdf->download($id.$tanggal.'.pdf');
+
+//            return view('page.bulanan')->with('result', $result);
         } else {
             return view('login');
         }

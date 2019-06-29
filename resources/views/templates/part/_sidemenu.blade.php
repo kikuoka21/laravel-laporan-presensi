@@ -22,8 +22,8 @@
                 <li><a href='{{url('/#')}}' title='30'>Laporan<i class=""></i><span
                                 class='fa arrow'></span></a>
                     <ul class='nav nav-second-level'>
-                        <li><a href='{{url('/lihat/perhari')}}' >pe-Hari</a></li>
-                        <li><a href='{{url('/personalia/presensi')}}' >pe-Bulan</a></li>
+                        <li><a href='{{url('/lihat/perbulan')}}' >pe-Bulan</a></li>
+                        {{--<li><a href='{{url('/personalia/presensi')}}' >pe-Bulan</a></li>--}}
                         <li><a href='{{url('/personalia/presensi')}}' >pe-Smester</a></li>
                     </ul>
                 </li>

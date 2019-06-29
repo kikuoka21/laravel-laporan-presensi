@@ -13,9 +13,9 @@
 
 Route::get('/', 'HomeController');
 
-Route::get('lihat/perhari/{id}/{tanggal}', 'perhari@data');
-Route::post('lihat/perhari', 'perhari@carikelas');
-Route::get('lihat/perhari', 'perhari');
+    Route::get('lihat/perbulan/{id}/{tanggal}', 'perhari@data2');
+Route::post('lihat/perbulan', 'perhari@carikelas');
+Route::get('lihat/perbulan', 'perhari');
 
 Route::prefix('auth')
     ->group(function () {

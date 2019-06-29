@@ -61,7 +61,7 @@
                                      {{$datakela->nama_kelas}}
                                 </td>
                                 <td>
-                                    <a style="background: #fff;"  href="/lihat/perhari/{{$datakela->id}}/{{$result['tanggalnya']}}">lihat</a>
+                                    <a style="background: #fff;"  href="/lihat/perbulan/{{$datakela->id}}/{{$result['tanggalnya']}}">lihat</a>
                                 </td>
                             </tr>
                         @endforeach
