@@ -1,0 +1,15 @@
+.modal-dialog{
+  padding-top: 10px;
+  border-radius: 20px;
+}
+.modal-header{
+  background-color: #3498db;
+}
+.modal-title{
+  color: white;
+  text-align: center;
+  font-family: Comic Sans MS;
+}
+.modal-content{
+  font-family: Comic Sans MS;
+}
