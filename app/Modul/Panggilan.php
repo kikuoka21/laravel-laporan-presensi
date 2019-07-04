@@ -19,8 +19,8 @@ class Panggilan
     public function SendRequest($url, $data)
     {
 //        $api = 'http://192.168.0.17:8000/';
-//        $api = 'http://192.168.12.17:8000/';
-        $api = 'http://192.168.12.33:8000/';
+        $api = 'http://192.168.12.17:8000/';
+//        $api = 'http://192.168.12.33:8000/';
 //        $api = 'http://192.168.43.242:8000/';
         try {
             $curl = curl_init();

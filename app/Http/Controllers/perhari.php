@@ -12,7 +12,6 @@ use App\Modul\Panggilan;
 use App\Modul\tool;
 use PDF;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Validator;
 
 class perhari
 {
@@ -29,7 +28,7 @@ class perhari
 
                 'isikelas' => '1'
             ];
-            return view('page.harian')->with('result', $result);
+            return view('page.pilihbulan')->with('result', $result);
 //            return redirect('/');
         } else {
             return redirect('auth/login');
@@ -78,7 +77,7 @@ class perhari
         ];
 
 //                //tag sesuaikan
-        return view('page.harian')->with('result', $result);
+        return view('page.pilihbulan')->with('result', $result);
 //            return redirect('/');
 
     }
@@ -121,7 +120,7 @@ class perhari
             }
             $result = [
                 'nama' => $request->session()->get("nama"),
-                'hari_ini' => (new \App\Modul\tool)->gettanggal(),
+                'hari_ini' => (new \App\Modul\tool)->geubahtanggal($tanggal),
                 'isi' => $flag,
                 'data' => $input,
             ];

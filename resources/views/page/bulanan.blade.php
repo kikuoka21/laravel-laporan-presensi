@@ -10,6 +10,11 @@
         border-collapse: collapse;
     }</style>
 @if($result['isi']=='0')
+
+    <div class="col-lg-12 ">
+        <h2 align="center" >Daftar Presensi Siswa<br>
+        Daftar Presensi Siswa</h2>
+    </div>
     <table class="table" style="width:100%" align="center">
         <tr>
             <th rowspan="2">
@@ -25,10 +30,10 @@
         <tr>
 
 
-            <?php for ($i = 1; $i <= count($result['data']->presensi[0]->kehadiran); $i++) {
-                echo "<th style=\"width: 2%\">" . $i . "</th>";
-            }
-            ?>
+			<?php for ($i = 1; $i <= count($result['data']->presensi[0]->kehadiran); $i++) {
+				echo "<th style=\"width: 2%\">" . $i . "</th>";
+			}
+			?>
 
 
         </tr>
@@ -65,7 +70,7 @@
             </tr>
 
     </table>
-<br>
+    <br>
     <div align="right" style="padding-right: 50px">
         @for($aa=0;$aa<count($result['data']->presensi[0]->kehadiran); $aa++ )
 

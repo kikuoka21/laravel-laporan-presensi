@@ -7,6 +7,8 @@
         <div class="container-fluid">
 
             <div class="col-lg-12  ">
+
+                @if($result['isikelas']=='1')
                 <form method='post'>
                     {{csrf_field()}}
                     <div class="form-group">
@@ -38,7 +40,7 @@
 
 
                 </form>
-                @if($result['isikelas']=='0')
+                @else
                     <br>
                     <br>
                     <br>

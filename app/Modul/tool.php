@@ -18,6 +18,12 @@ class tool
         return $this->hari_ini() . $this->bulan(\Carbon\Carbon::now()->format('F')) .
             \Carbon\Carbon::now()->format(' Y');
     }
+    public function geubahtanggal($tgl)
+    {
+	    $date=date_create($tgl);
+        return $this->bulan(\Carbon\Carbon::now()->format('F')) .
+            \Carbon\Carbon::now()->format(' Y');
+    }
 
     private function hari_ini()
     {
