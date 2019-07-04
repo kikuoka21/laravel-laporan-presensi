@@ -20,8 +20,7 @@ class tool
     }
     public function geubahtanggal($tgl)
     {
-	    $date=date_create($tgl);
-        return $this->bulan(\Carbon\Carbon::now()->format('F')) .
+        return $this->bulan(\Carbon\Carbon::create($tgl)->format('F')) .
             \Carbon\Carbon::now()->format(' Y');
     }
 

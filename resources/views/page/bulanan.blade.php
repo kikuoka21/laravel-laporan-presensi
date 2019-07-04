@@ -1,3 +1,8 @@
+<html>
+
+<head>
+
+</head>
 <body>
 @if (Session::has('notif'))
     <div align="center">
@@ -8,42 +13,55 @@
     table, th, td {
         border: 1px solid black;
         border-collapse: collapse;
-    }</style>
+    }
+
+
+</style>
 @if($result['isi']=='0')
 
     <div class="col-lg-12 ">
-        <h2 align="center" >Daftar Presensi Siswa<br>
-        Daftar Presensi Siswa</h2>
+        <h2 align="center">
+            Daftar Presensi Siswa<br>
+            SMK Multi Media Mandiri<br>
+            {{$result['head_tgl']}}</h2>
+        <h3 align="left">
+            Kelas : {{$result['data']->data->nama_kelas}}<br>
+            Tahun Ajar : {{substr($result['data']->data->thn_ajar,0,4).'/'.substr($result['data']->data->thn_ajar,4)}}<br>
+            Wali Kelas : {{$result['data']->data->wali}}
+
+        </h3>
     </div>
+    <div align="right">Tanggal cetak: {{$result['hari_ini']}}</div>
     <table class="table" style="width:100%" align="center">
+        {{--<table class="table">--}}
         <tr>
-            <th rowspan="2">
+            <th style="width: 10% ;padding-left: 15px;padding-right: 15px" rowspan="2">
                 Nis
             </th>
-            <th rowspan="2">
+            <th style="padding-left: 15px;padding-right: 15px" rowspan="2">
                 Nama
             </th>
-            <th colspan="{{count($result['data']->presensi[0]->kehadiran)}}">
+            <th style="padding-left: 15px;padding-right: 15px" colspan="{{count($result['data']->presensi[0]->kehadiran)}}" class="text-center">
                 Tanggal
             </th>
         </tr>
         <tr>
 
 
-			<?php for ($i = 1; $i <= count($result['data']->presensi[0]->kehadiran); $i++) {
-				echo "<th style=\"width: 2%\">" . $i . "</th>";
-			}
-			?>
+            <?php for ($i = 1; $i <= count($result['data']->presensi[0]->kehadiran); $i++) {
+                echo "<th style=\"width: 2%\">" . $i . "</th>";
+            }
+            ?>
 
 
         </tr>
 
         @foreach($result['data']->presensi as $datasiswa)
             <tr>
-                <td style="padding-left: 15px">
+                <td style="padding-left: 15px;padding-right: 15px " align="right">
                     {{$datasiswa->nis}}
                 </td>
-                <td style="padding-left: 15px">
+                <td style="padding-left: 15px ;padding-right: 15px ">
                     {{$datasiswa->nama}}
                 </td>
                 @for($aa=0;$aa<count($datasiswa->kehadiran); $aa++ )
@@ -71,16 +89,24 @@
 
     </table>
     <br>
-    <div align="right" style="padding-right: 50px">
-        @for($aa=0;$aa<count($result['data']->presensi[0]->kehadiran); $aa++ )
 
-            @if( $result['data']->presensi[0]->kehadiran[$aa]->stat=='L')
-                {{$result['data']->presensi[0]->kehadiran[$aa]->ket}}
-                : {{$result['data']->presensi[0]->kehadiran[$aa]->tanggal}}    <br>
-            @endif
-        @endfor
-    </div>
+    <div align="center">Dibuat Oleh<br><br><br><br>{{$result['nama']}}<br>NIP. {{$result['username']}}</div>
+
+
+    <br>
+    <div align="center">Kepala Sekolah<br><br><br><br>Selamet Riyandi, S.Kom<br>NIP. 123123</div>
+
+    {{--<div align="right" style="padding-right: 50px">--}}
+    {{--@for($aa=0;$aa<count($result['data']->presensi[0]->kehadiran); $aa++ )--}}
+
+    {{--@if( $result['data']->presensi[0]->kehadiran[$aa]->stat=='L')--}}
+    {{--{{$result['data']->presensi[0]->kehadiran[$aa]->ket}}--}}
+    {{--: {{$result['data']->presensi[0]->kehadiran[$aa]->tanggal}}    <br>--}}
+    {{--@endif--}}
+    {{--@endfor--}}
+    {{--</div>--}}
 @endif
 
 
 </body>
+</html>

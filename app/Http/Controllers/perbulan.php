@@ -10,10 +10,11 @@ namespace App\Http\Controllers;
 
 use App\Modul\Panggilan;
 use App\Modul\tool;
+use Carbon\Carbon;
 use PDF;
 use Illuminate\Http\Request;
 
-class perhari
+class perbulan
 {
     public function __invoke(Request $request)
     {
@@ -64,12 +65,9 @@ class perhari
             $flag = '1';
         }
 
-        $bulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
         $result = [
             'nama' => $request->session()->get("nama"),
             'hari_ini' => (new \App\Modul\tool)->gettanggal(),
-            'bulan' => $bulan,
-            'tahun' => \Carbon\Carbon::now()->format('Y'),
             'tanggalnya' => $tanggal,
             'isikelas' => $flag,
 //            'datakelas' => json_encode($input)
@@ -120,14 +118,16 @@ class perhari
             }
             $result = [
                 'nama' => $request->session()->get("nama"),
-                'hari_ini' => (new \App\Modul\tool)->geubahtanggal($tanggal),
+                'hari_ini' => (new \App\Modul\tool)->gettanggal(),
+                'username' => $request->session()->get("username"),
+                'head_tgl' => (new \App\Modul\tool)->geubahtanggal($tanggal),
+//                'head_tgl' => $tanggal,
                 'isi' => $flag,
                 'data' => $input,
             ];
-
             return view('page.bulanan')->with('result', $result);
         } else {
-            return view('login');
+            return redirect('auth/login');
         }
 
     }
@@ -163,15 +163,16 @@ class perhari
             $result = [
                 'nama' => $request->session()->get("nama"),
                 'hari_ini' => (new \App\Modul\tool)->gettanggal(),
+                'username' => $request->session()->get("username"),
+                'head_tgl' => (new \App\Modul\tool)->geubahtanggal($tanggal),
+//                'head_tgl' => $tanggal,
                 'isi' => $flag,
                 'data' => $input,
             ];
-            $pdf = PDF::loadView('page.bulanan', compact('result'))->setPaper('a4', 'landscape');
+            $pdf = PDF::loadView('page.bulanan', compact('result'))->setPaper('A4', 'landscape');
             return $pdf->download($id.$tanggal.'.pdf');
-
-//            return view('page.bulanan')->with('result', $result);
         } else {
-            return view('login');
+            return redirect('auth/login');
         }
 
     }

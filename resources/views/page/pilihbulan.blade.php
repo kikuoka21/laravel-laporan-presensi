@@ -9,49 +9,46 @@
             <div class="col-lg-12  ">
 
                 @if($result['isikelas']=='1')
-                <form method='post'>
-                    {{csrf_field()}}
-                    <div class="form-group">
-                        <label for="sel1">Pilih Tahun</label>
+                    <form method='post'>
+                        {{csrf_field()}}
+                        <div class="form-group">
+                            <label for="sel1">Pilih Tahun</label>
 
-                        <select class="form-control" name="tahun">
-                            <?php $thn = $result['tahun'];
-                            for ($thn ; $thn >= 2014; $thn--){?>
-                            <option value="{{$thn}}">{{$thn}}</option>
+                            <select class="form-control" name="tahun">
+                                <?php $thn = $result['tahun'];
+                                for ($thn ; $thn >= 2014; $thn--){?>
+                                <option value="{{$thn}}">{{$thn}}</option>
 
-                            <?php }?>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="sel1">Pilih Bulan:</label>
+                                <?php }?>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="sel1">Pilih semester:</label>
 
-                        <select class="form-control" name="bulan">
-                            <?php $a = 1; ?>
-                            @foreach($result['bulan'] as $bulannya)
-                                <option value="{{$a}}">{{$bulannya}}</option>
+                            <select class="form-control" name="bulan">
+                                <?php $a = 1; ?>
+                                @foreach($result['bulan'] as $bulannya)
+                                    <option value="{{$a}}">{{$bulannya}}</option>
 
-                                <?php $a++; ?>
-                            @endforeach
-                        </select>
-                    </div>
-                    <div class="col-lg-2">
-                        <button type="submit" class="btn btn-default">Cari</button>
-                    </div>
+                                    <?php $a++; ?>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <button type="submit" class="btn btn-default">Cari</button>
+                        </div>
 
 
-                </form>
+                    </form>
                 @else
-                    <br>
-                    <br>
-                    <br>
                     <table class="table">
                         <thead>
                         <tr>
                             <th>
-                                nama kelas
+                                Nama Kelas
                             </th>
                             <th>
-                                cari
+                                perintah
                             </th>
                         </tr>
                         </thead>
@@ -60,10 +57,16 @@
                         @foreach($result['datakelas'] as $datakela)
                             <tr>
                                 <td>
-                                     {{$datakela->nama_kelas}}
+                                    {{$datakela->nama_kelas}}
                                 </td>
                                 <td>
-                                    <a style="background: #fff;"  href="/lihat/perbulan/{{$datakela->id}}/{{$result['tanggalnya']}}">lihat</a>
+                                    <a style="background: #fff;" target="_blank"
+                                       href="/lihat/perbulan/{{$datakela->id}}/{{$result['tanggalnya']}}">lihat</a><br>
+                                    <a style="background: #fff;" target="_blank"
+                                       href="/lihat/perbulan/print/{{$datakela->id}}/{{$result['tanggalnya']}}">print</a>
+                                </td>
+                                <td>
+
                                 </td>
                             </tr>
                         @endforeach

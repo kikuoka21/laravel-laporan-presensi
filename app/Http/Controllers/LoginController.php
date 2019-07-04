@@ -14,7 +14,7 @@ class LoginController extends Controller
 
     public function __invoke(Request $request)
     {
-        if ($request->session()->has('x1d') && $request->session()->has('token')) {
+        if ($request->session()->has('username') && $request->session()->has('token')) {
             return redirect('/');
         } else {
             return view('login');
@@ -39,9 +39,6 @@ class LoginController extends Controller
         $xuid = $request->input('xuid');
         $xpass = $Jparse->genPassword($request->input('xpassword'));
 
-
-//return  gettype($input) ;
-//return  $input ;
         if (!$check->fails()) {
             $curl = new Panggilan();
             $input = $curl->SendRequest("api/auth/login", [
