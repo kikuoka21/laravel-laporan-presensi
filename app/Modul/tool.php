@@ -23,6 +23,11 @@ class tool
         return $this->bulan(\Carbon\Carbon::create($tgl)->format('F')) .
             \Carbon\Carbon::now()->format(' Y');
     }
+    public function geubahtanggalbln($tgl)
+    {
+        return \Carbon\Carbon::create($tgl)->format('d ').$this->bulan(\Carbon\Carbon::create($tgl)->format('F')) .
+            \Carbon\Carbon::now()->format(' Y');
+    }
 
     private function hari_ini()
     {

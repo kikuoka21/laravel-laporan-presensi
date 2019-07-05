@@ -11,7 +11,7 @@
 @endif
 <style>
     table, th, td {
-        border: 1px solid black;
+        border: 1px solid #444444;
         border-collapse: collapse;
     }
 
@@ -41,7 +41,7 @@
             <th style="padding-left: 15px;padding-right: 15px" rowspan="2">
                 Nama
             </th>
-            <th style="padding-left: 15px;padding-right: 15px" colspan="{{count($result['data']->presensi[0]->kehadiran)}}" class="text-center">
+            <th style="padding-left: 15px;padding-right: 15px" colspan="{{count($result['data']->presensi[0]->kehadiran)}}" align="center">
                 Tanggal
             </th>
         </tr>
@@ -84,9 +84,9 @@
                 @endfor
 
 
-                @endforeach
-            </tr>
 
+            </tr>
+        @endforeach
     </table>
     <br>
 

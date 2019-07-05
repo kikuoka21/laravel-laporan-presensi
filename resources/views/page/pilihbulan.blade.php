@@ -63,7 +63,7 @@
                                     <a style="background: #fff;" target="_blank"
                                        href="/lihat/perbulan/{{$datakela->id}}/{{$result['tanggalnya']}}">lihat</a><br>
                                     <a style="background: #fff;" target="_blank"
-                                       href="/lihat/perbulan/print/{{$datakela->id}}/{{$result['tanggalnya']}}">print</a>
+                                       href="/print/perbulan/{{$datakela->id}}/{{$result['tanggalnya']}}">print</a>
                                 </td>
                                 <td>
 

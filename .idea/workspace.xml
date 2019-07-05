@@ -2,16 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8e1037d-b4d6-4555-b124-1902834dff42" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/kikuo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/user.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/web-qrcode.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/perhari.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/perbulan.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Modul/Panggilan.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modul/Panggilan.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Modul/tool.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modul/tool.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/page/bulanan.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/bulanan.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/page/pilihbulan.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/pilihbulan.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/page/pilihsemester.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/pilihsemester.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/part/_sidemenu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/part/_sidemenu.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,60 +25,13 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-133697501">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="dummy" value="8" />
-          <entry key="php" value="989" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Blade" value="870" />
-          <entry key="PHP" value="119" />
-          <entry key="PLAIN_TEXT" value="8" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="env" value="2" />
-          <entry key="json" value="1" />
-          <entry key="php" value="16" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key=".env file" value="2" />
-          <entry key="Blade" value="10" />
-          <entry key="JSON" value="1" />
-          <entry key="PHP" value="6" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="18" column="38" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+              <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -84,48 +39,57 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Modul/tool.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+            <state relative-caret-position="287">
+              <caret line="25" column="36" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/perbulan.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/page/pilihbulan.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="173" column="14" selection-start-line="173" selection-start-column="14" selection-end-line="173" selection-end-column="14" />
+            <state relative-caret-position="484">
+              <caret line="65" column="51" selection-start-line="65" selection-start-column="51" selection-end-line="65" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/page/bulanan.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/page/pilihsemester.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-952">
-              <caret line="28" column="67" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="67" />
-              <folding>
-                <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#2;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#1;n#tr#2;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#2;n#tr#2;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#3;n#tr#2;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="-77">
+              <caret line="29" column="66" selection-start-line="29" selection-start-column="66" selection-end-line="29" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/persemester.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="25" column="62" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/page/pilihbulan.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/page/semesteran.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="26" column="62" lean-forward="true" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="62" />
+            <state relative-caret-position="178">
+              <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
               <folding>
-                <element signature="e#2561#2586#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#2;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#3;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#4;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#5;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#2;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#2;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#3;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#2;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#5;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -140,16 +104,15 @@
       <find>budi</find>
       <find>#337ab7</find>
       <find />
+      <find>perhari</find>
       <find>presensi</find>
       <find>harian</find>
       <find>tanggalnya</find>
-      <find>part._js</find>
-      <find>perhari</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
-      <replace>pilihbulan</replace>
       <replace>perbulan</replace>
+      <replace>pilihbulan</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -162,46 +125,27 @@
         <option value="$PROJECT_DIR$/app/Modul/JsonParse.php" />
         <option value="$PROJECT_DIR$/public/assets/css/bootstrap.min.css.map" />
         <option value="$PROJECT_DIR$/public/assets/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/resources/views/login.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/page/presensi.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/page/user.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/page/profile.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/templates/base.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/page/harian.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/templates/part/_sidemenu.blade.php" />
-        <option value="$PROJECT_DIR$/app/Modul/Panggilan.php" />
-        <option value="$PROJECT_DIR$/resources/views/login.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" />
-        <option value="$PROJECT_DIR$/resources/views/templates/part/_head2.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/page/bulanan.blade.php" />
-        <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/app/Modul/tool.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/perhari.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/perbulan.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" />
+        <option value="$PROJECT_DIR$/app/Modul/Panggilan.php" />
+        <option value="$PROJECT_DIR$/resources/views/templates/part/_sidemenu.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/page/pilihbulan.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/page/semester.blade.php" />
+        <option value="$PROJECT_DIR$/app/Modul/tool.php" />
+        <option value="$PROJECT_DIR$/resources/views/page/bulanan.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/persemester.php" />
+        <option value="$PROJECT_DIR$/resources/views/page/pilihsemester.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/page/semesteran.blade.php" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
-    <package-json value="$PROJECT_DIR$/package.json" />
-  </component>
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/package.json" />
-      <path value="$PROJECT_DIR$/public/assets/bower_components/bootstrap/package.json" />
-      <path value="$PROJECT_DIR$/public/assets/bower_components/flot/package.json" />
-      <path value="$PROJECT_DIR$/public/assets/bower_components/holderjs/package.json" />
-      <path value="$PROJECT_DIR$/public/assets/bower_components/metisMenu/package.json" />
-      <path value="$PROJECT_DIR$/public/assets/bower_components/morrisjs/package.json" />
-      <path value="$PROJECT_DIR$/public/assets/css/pace/package.json" />
-      <path value="$PROJECT_DIR$/public/assets/js/jquery-ui-1.12.1/package.json" />
-    </packageJsonPaths>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -293,10 +237,10 @@
       <path value="$PROJECT_DIR$/vendor/dompdf/dompdf" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="676" />
-    <option name="width" value="697" />
-    <option name="height" value="745" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="953" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -306,84 +250,80 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="web-qrcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-qrcode" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel-kkp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-kkp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="web-qrcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-qrcode" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel-kkp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-kkp" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="web-qrcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-qrcode" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel-kkp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-kkp" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="web-qrcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-qrcode" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel-kkp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-kkp" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="web-qrcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-qrcode" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel-kkp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-kkp" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Modul" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="web-qrcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-qrcode" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-qrcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-qrcode" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel-kkp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-kkp" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="web-qrcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-qrcode" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel-kkp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-kkp" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="web-qrcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-qrcode" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel-kkp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-kkp" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="page" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="web-qrcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-qrcode" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel-kkp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-kkp" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="web-qrcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-qrcode" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel-kkp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-kkp" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="part" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="web-qrcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="laravel-kkp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-kkp" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -396,7 +336,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\kikuo\web-qrcode\resources\views\templates\part" />
+      <recent name="C:\Users\user\laravel-kkp\resources\views\page" />
+      <recent name="C:\Users\user\laravel-kkp\app\Http\Controllers" />
       <recent name="C:\Users\kikuo\web-qrcode\resources\views\page" />
       <recent name="C:\Users\kikuo\web-qrcode\public" />
       <recent name="C:\Users\kikuo\web-qrcode\app\Modul" />
@@ -417,6 +358,12 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" BundledDictionaries="31" BundledDictionary0="@types.dic" BundledDictionary1="lodash.dic" BundledDictionary2="eslint-config-airbnb.dic" BundledDictionary3="jetbrains.dic" BundledDictionary4="firebase.dic" BundledDictionary5="english.dic" BundledDictionary6="vuex.dic" BundledDictionary7="twig.dic" BundledDictionary8="eslint.dic" BundledDictionary9="redux.dic" BundledDictionary10="less.dic" BundledDictionary11="core-js.dic" BundledDictionary12="express.dic" BundledDictionary13="prettier.dic" BundledDictionary14="angular.dic" BundledDictionary15="rxjs.dic" BundledDictionary16="vuetify.dic" BundledDictionary17="css.dic" BundledDictionary18="request.dic" BundledDictionary19="zone.js.dic" BundledDictionary20="@angular.dic" BundledDictionary21="async.dic" BundledDictionary22="bluebird.dic" BundledDictionary23="_javascript.dic" BundledDictionary24="cloudfront.dic" BundledDictionary25="graphql.dic" BundledDictionary26="javascript.dic" BundledDictionary27="heroku.dic" BundledDictionary28="vue.dic" BundledDictionary29="php.dic" BundledDictionary30="debug.dic" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="project-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
@@ -431,19 +378,20 @@
       <workItem from="1561783966286" duration="17653000" />
       <workItem from="1561805919476" duration="11538000" />
       <workItem from="1562230286125" duration="835000" />
-      <workItem from="1562239209863" duration="1550000" />
-      <workItem from="1562251788238" duration="10533000" />
+      <workItem from="1562239209863" duration="1578000" />
+      <workItem from="1562310779591" duration="1402000" />
+      <workItem from="1562322230331" duration="7813000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42109000" />
+    <option name="totallyTimeSpent" value="40819000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2624811" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26385927" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -455,10 +403,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32580644" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32827735" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -467,9 +415,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/Helper/UBLCore.php" />
@@ -548,6 +493,55 @@
     <entry file="file://$PROJECT_DIR$/resources/views/page/dashboard.blade.php" />
     <entry file="file://$PROJECT_DIR$/resources/views/page/presensi.blade.php" />
     <entry file="file://$PROJECT_DIR$/resources/views/page/statistik.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/templates/base.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="21" column="10" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="21" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="66" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/templates/part/_head.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/perhari.php" />
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LoginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9">
+          <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
+          <folding>
+            <element signature="e#40#64#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modul/Panggilan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/templates/part/_sidemenu.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/page/profile.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -555,324 +549,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modul/Panggilan.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LoginController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="963">
-          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
-          <folding>
-            <element signature="e#40#64#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/templates/part/_js.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-176" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/templates/base.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-377">
-          <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/templates/part/_sidemenu.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="24" column="83" selection-start-line="24" selection-start-column="83" selection-end-line="24" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="708">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/dompdf/dompdf/src/Helpers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-663">
-          <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding>
-            <element signature="e#45#393#0#PHP" />
-            <element signature="e#398#822#0#PHP" />
-            <element signature="e#466#553#0#PHP" />
-            <element signature="e#563#631#0#PHP" />
-            <element signature="e#667#776#0#PHP" />
-            <element signature="e#737#776#0#PHP" />
-            <element signature="e#830#1536#0#PHP" />
-            <element signature="e#1541#3606#0#PHP" />
-            <element signature="e#1670#1828#0#PHP" />
-            <element signature="e#1931#2141#0#PHP" />
-            <element signature="e#2178#3027#0#PHP" />
-            <element signature="e#2284#2374#0#PHP" />
-            <element signature="e#2606#2910#0#PHP" />
-            <element signature="e#3104#3578#0#PHP" />
-            <element signature="e#3282#3401#0#PHP" />
-            <element signature="e#3402#3578#0#PHP" />
-            <element signature="e#3612#4021#0#PHP" />
-            <element signature="e#4026#4649#0#PHP" />
-            <element signature="e#4484#4606#0#PHP" />
-            <element signature="e#4655#4800#0#PHP" />
-            <element signature="e#4805#6067#0#PHP" />
-            <element signature="e#5182#5293#0#PHP" />
-            <element signature="e#5303#5380#0#PHP" />
-            <element signature="e#5447#6039#0#PHP" />
-            <element signature="e#5554#5601#0#PHP" />
-            <element signature="e#5682#5729#0#PHP" />
-            <element signature="e#5810#5857#0#PHP" />
-            <element signature="e#5938#5985#0#PHP" />
-            <element signature="e#5998#6029#0#PHP" />
-            <element signature="e#6073#6201#0#PHP" />
-            <element signature="e#6206#6308#0#PHP" />
-            <element signature="e#6314#6554#0#PHP" />
-            <element signature="e#6559#7162#0#PHP" />
-            <element signature="e#6622#6803#0#PHP" />
-            <element signature="e#6878#7130#0#PHP" />
-            <element signature="e#7168#7874#0#PHP" />
-            <element signature="e#7879#8421#0#PHP" />
-            <element signature="e#7941#8085#0#PHP" />
-            <element signature="e#8107#8258#0#PHP" />
-            <element signature="e#8277#8316#0#PHP" />
-            <element signature="e#8427#8704#0#PHP" />
-            <element signature="e#8709#10363#0#PHP" />
-            <element signature="e#8875#10336#0#PHP" />
-            <element signature="e#8951#10326#0#PHP" />
-            <element signature="e#8981#10231#0#PHP" />
-            <element signature="e#9044#10204#0#PHP" />
-            <element signature="e#9093#9390#0#PHP" />
-            <element signature="e#9218#9355#0#PHP" />
-            <element signature="e#9415#9717#0#PHP" />
-            <element signature="e#9543#9680#0#PHP" />
-            <element signature="e#9742#9829#0#PHP" />
-            <element signature="e#9854#10182#0#PHP" />
-            <element signature="e#9957#10070#0#PHP" />
-            <element signature="e#10099#10182#0#PHP" />
-            <element signature="e#10248#10312#0#PHP" />
-            <element signature="e#10369#10650#0#PHP" />
-            <element signature="e#10655#12835#0#PHP" />
-            <element signature="e#10894#12560#0#PHP" />
-            <element signature="e#10970#12550#0#PHP" />
-            <element signature="e#11000#12318#0#PHP" />
-            <element signature="e#11063#12291#0#PHP" />
-            <element signature="e#11112#11313#0#PHP" />
-            <element signature="e#11159#11278#0#PHP" />
-            <element signature="e#11338#11544#0#PHP" />
-            <element signature="e#11388#11507#0#PHP" />
-            <element signature="e#11569#11656#0#PHP" />
-            <element signature="e#11681#12269#0#PHP" />
-            <element signature="e#11784#12151#0#PHP" />
-            <element signature="e#11848#12121#0#PHP" />
-            <element signature="e#12024#12121#0#PHP" />
-            <element signature="e#12181#12269#0#PHP" />
-            <element signature="e#12335#12536#0#PHP" />
-            <element signature="e#12406#12536#0#PHP" />
-            <element signature="e#12589#12651#0#PHP" />
-            <element signature="e#12697#12807#0#PHP" />
-            <element signature="e#12841#13016#0#PHP" />
-            <element signature="e#13021#15869#0#PHP" />
-            <element signature="e#13193#13293#0#PHP" />
-            <element signature="e#13347#15663#0#PHP" />
-            <element signature="e#13496#13717#0#PHP" />
-            <element signature="e#13579#13672#0#PHP" />
-            <element signature="e#13731#13810#0#PHP" />
-            <element signature="e#13824#13909#0#PHP" />
-            <element signature="e#13923#14347#0#PHP" />
-            <element signature="e#14037#14333#0#PHP" />
-            <element signature="e#14186#14333#0#PHP" />
-            <element signature="e#14361#14448#0#PHP" />
-            <element signature="e#14462#14555#0#PHP" />
-            <element signature="e#14567#15663#0#PHP" />
-            <element signature="e#14633#14714#0#PHP" />
-            <element signature="e#15030#15653#0#PHP" />
-            <element signature="e#15098#15653#0#PHP" />
-            <element signature="e#15403#15639#0#PHP" />
-            <element signature="e#15514#15639#0#PHP" />
-            <element signature="e#15680#15841#0#PHP" />
-            <element signature="e#15875#16030#0#PHP" />
-            <element signature="e#16035#16457#0#PHP" />
-            <element signature="e#16175#16451#0#PHP" />
-            <element signature="e#16463#17008#0#PHP" />
-            <element signature="e#17013#17478#0#PHP" />
-            <element signature="e#17138#17276#0#PHP" />
-            <element signature="e#17360#17432#0#PHP" />
-            <element signature="e#17484#17539#0#PHP" />
-            <element signature="e#17544#18099#0#PHP" />
-            <element signature="e#17592#18071#0#PHP" />
-            <element signature="e#17653#18071#0#PHP" />
-            <element signature="e#17751#18071#0#PHP" />
-            <element signature="e#17892#18071#0#PHP" />
-            <element signature="e#18105#18289#0#PHP" />
-            <element signature="e#18294#18923#0#PHP" />
-            <element signature="e#18380#18448#0#PHP" />
-            <element signature="e#18668#18711#0#PHP" />
-            <element signature="e#18720#18763#0#PHP" />
-            <element signature="e#18772#18815#0#PHP" />
-            <element signature="e#18832#18916#0#PHP" />
-            <element signature="e#18929#19142#0#PHP" />
-            <element signature="e#19147#20492#0#PHP" />
-            <element signature="e#19266#19345#0#PHP" />
-            <element signature="e#19453#19618#0#PHP" />
-            <element signature="e#19691#20419#0#PHP" />
-            <element signature="e#19827#20408#0#PHP" />
-            <element signature="e#20117#20408#0#PHP" />
-            <element signature="e#20140#20394#0#PHP" />
-            <element signature="e#20498#20704#0#PHP" />
-            <element signature="e#20709#27774#0#PHP" />
-            <element signature="e#20793#20971#0#PHP" />
-            <element signature="e#21005#21171#0#PHP" />
-            <element signature="e#21341#21507#0#PHP" />
-            <element signature="e#21757#21899#0#PHP" />
-            <element signature="e#22107#22175#0#PHP" />
-            <element signature="e#22213#22763#0#PHP" />
-            <element signature="e#22415#22753#0#PHP" />
-            <element signature="e#22538#22739#0#PHP" />
-            <element signature="e#22946#23297#0#PHP" />
-            <element signature="e#23126#23287#0#PHP" />
-            <element signature="e#23165#23273#0#PHP" />
-            <element signature="e#23346#23455#0#PHP" />
-            <element signature="e#23637#23902#0#PHP" />
-            <element signature="e#23681#23780#0#PHP" />
-            <element signature="e#23793#23892#0#PHP" />
-            <element signature="e#24142#27727#0#PHP" />
-            <element signature="e#24192#27665#0#PHP" />
-            <element signature="e#24238#27536#0#PHP" />
-            <element signature="e#24312#24627#0#PHP" />
-            <element signature="e#24345#24535#0#PHP" />
-            <element signature="e#24648#25396#0#PHP" />
-            <element signature="e#24681#24871#0#PHP" />
-            <element signature="e#24950#25365#0#PHP" />
-            <element signature="e#25183#25365#0#PHP" />
-            <element signature="e#25417#25592#0#PHP" />
-            <element signature="e#25613#25886#0#PHP" />
-            <element signature="e#25907#27297#0#PHP" />
-            <element signature="e#26022#27205#0#PHP" />
-            <element signature="e#26074#26180#0#PHP" />
-            <element signature="e#26209#26324#0#PHP" />
-            <element signature="e#26353#26468#0#PHP" />
-            <element signature="e#26497#26612#0#PHP" />
-            <element signature="e#26641#26755#0#PHP" />
-            <element signature="e#26784#26898#0#PHP" />
-            <element signature="e#26927#27041#0#PHP" />
-            <element signature="e#27070#27179#0#PHP" />
-            <element signature="e#27318#27518#0#PHP" />
-            <element signature="e#27780#28253#0#PHP" />
-            <element signature="e#28258#30019#0#PHP" />
-            <element signature="e#28625#29937#0#PHP" />
-            <element signature="e#28689#28783#0#PHP" />
-            <element signature="e#28796#29013#0#PHP" />
-            <element signature="e#28917#29013#0#PHP" />
-            <element signature="e#29026#29125#0#PHP" />
-            <element signature="e#29137#29937#0#PHP" />
-            <element signature="e#29523#29621#0#PHP" />
-            <element signature="e#30025#31073#0#PHP" />
-            <element signature="e#30111#30182#0#PHP" />
-            <element signature="e#30267#31045#0#PHP" />
-            <element signature="e#30360#31035#0#PHP" />
-            <element signature="e#30536#31021#0#PHP" />
-            <element signature="e#30700#31003#0#PHP" />
-            <element signature="e#30876#31003#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/templates/part/_head2.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/templates/part/_head.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-340">
-          <caret line="16" column="72" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/templates/baseakhir.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="109" column="6" lean-forward="true" selection-start-line="109" selection-start-column="6" selection-end-line="110" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-510" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="69" column="31" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modul/tool.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/perbulan.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="173" column="14" selection-start-line="173" selection-start-column="14" selection-end-line="173" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/page/bulanan.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-952">
-          <caret line="28" column="67" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="67" />
+        <state relative-caret-position="71">
+          <caret line="132" column="5" lean-forward="true" selection-start-line="90" selection-start-column="2" selection-end-line="132" selection-end-column="5" />
           <folding>
-            <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#2;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#2563#4201#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/page/semester.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-221">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
             <element signature="n#style#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#1;n#tr#2;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#2;n#tr#2;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#3;n#tr#2;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/page/pilihbulan.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="26" column="62" lean-forward="true" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="62" />
+        <state relative-caret-position="484">
+          <caret line="65" column="51" selection-start-line="65" selection-start-column="51" selection-end-line="65" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/page/bulanan.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="909">
+          <caret line="71" column="20" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modul/tool.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="25" column="36" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/persemester.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="25" column="62" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/page/pilihsemester.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-77">
+          <caret line="29" column="66" selection-start-line="29" selection-start-column="66" selection-end-line="29" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/page/semesteran.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
           <folding>
-            <element signature="e#2561#2586#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#2;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#3;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#4;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#5;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#2;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#3;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#5;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

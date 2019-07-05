@@ -1,4 +1,4 @@
-@extends('templates.base', ['titlePage' => __('Pilih Tanggal dan Kelas'), 'nama'=> __($result['nama']),
+@extends('templates.base', ['titlePage' => __('Pilih Tahun Ajar dan Kelas'), 'nama'=> __($result['nama']),
 'tanggal'=> __($result['hari_ini'])])
 
 @section('content')
@@ -8,39 +8,36 @@
 
             <div class="col-lg-12  ">
 
-                @if($result['isikelas']=='1')
-                <form method='post'>
-                    {{csrf_field()}}
-                    <div class="form-group">
-                        <label for="sel1">Pilih Tahun</label>
+                @if($result['flag']=='1')
+                    <form method='post'>
+                        {{csrf_field()}}
+                        <div class="form-group">
+                            <label for="sel1">Pilih Tahun ajar :</label>
 
-                        <select class="form-control" name="tahun">
-                            <?php $thn = $result['tahun'];
-                            for ($thn ; $thn >= 2014; $thn--){?>
-                            <?php $aa = $thn+1;?>
-                            <option value="{{$thn}}">{{$thn.'/'.$aa}}</option>
+                            <select class="form-control" name="tahun_ajar">
+								<?php $thn = $result['tahun'];
+								for ($thn ; $thn >= 2014; $thn--){?>
+								<?php $aa = $thn + 1;?>
+                                <option value="{{$thn}}">{{$thn.'/'.$aa}}</option>
 
-                            <?php }?>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="sel1">Pilih Bulan:</label>
+								<?php }?>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="sel1">pilih Semester</label>
 
-                        <select class="form-control" name="bulan">
-                            <?php $a = 1; ?>
-                            @foreach($result['bulan'] as $bulannya)
-                                <option value="{{$a}}">{{$bulannya}}</option>
+                            <select class="form-control" name="semester">
+                                <option value="ga">Ganjil</option>
+                                <option value="ge">Genap</option>
 
-                                <?php $a++; ?>
-                            @endforeach
-                        </select>
-                    </div>
-                    <div class="col-lg-2">
-                        <button type="submit" class="btn btn-default">Cari</button>
-                    </div>
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <button type="submit" class="btn btn-default">Cari</button>
+                        </div>
 
 
-                </form>
+                    </form>
                 @else
                     <table class="table">
                         <thead>
@@ -58,11 +55,13 @@
                         @foreach($result['datakelas'] as $datakela)
                             <tr>
                                 <td>
-                                     {{$datakela->nama_kelas}}
+                                    {{$datakela->nama_kelas}}
                                 </td>
                                 <td>
-                                    <a style="background: #fff;" target="_blank"  href="/lihat/perbulan/{{$datakela->id}}/{{$result['tanggalnya']}}">lihat</a><br>
-                                    <a style="background: #fff;" target="_blank"  href="/lihat/perbulan/print/{{$datakela->id}}/{{$result['tanggalnya']}}">print</a>
+                                    <a style="background: #fff;" target="_blank"
+                                       href="/lihat/persemester/{{$datakela->id}}/{{$result['smes']}}">lihat</a><br>
+                                    <a style="background: #fff;" target="_blank"
+                                       href="/lihat/persemester/print/{{$datakela->id}}/{{$result['tanggalnya']}}">print</a>
                                 </td>
                                 <td>
 

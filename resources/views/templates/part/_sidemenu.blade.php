@@ -23,7 +23,7 @@
                                 class='fa arrow'></span></a>
                     <ul class='nav nav-second-level'>
                         <li><a href='{{url('/lihat/perbulan')}}' >pe-Bulan</a></li>
-                        <li><a href='{{url('/personalia/presensi')}}' >pe-Smester</a></li>
+                        <li><a href='{{url('/lihat/persemester')}}' >pe-Smester</a></li>
                     </ul>
                 </li>
 
