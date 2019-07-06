@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Laravel Form</title>
+    <title>Login</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -20,21 +20,24 @@
             </div>
         </div>
     @endif
-    <h2>Login guru SMK MUlti Media Mandiri</h2>
-    <form method="post">
-        {{csrf_field()}}
-        <div class="form-group">
-            <label for="xuid">Masukkan NIP:</label>
-            <input type="text" class="form-control" id="xuid" placeholder="Masukkan NIP" name="xuid"><br>
-            <label for="xpassword">Masukkan Password:</label>
-            <input type="password" class="form-control" id="xpassword" placeholder="Masukkan Password" name="xpassword">
+    <div align="center">
+        <div style="width: 50%" align="left">
+            <h2>Login Guru SMK MUlti Media Mandiri</h2>
+            <form method="post">
+                {{csrf_field()}}
+                <div class="form-group">
+                    <label for="xuid">NIP:</label>
+                    <input type="text" class="form-control" id="xuid" placeholder="Masukkan NIP" name="xuid"><br>
+                    <label for="xpassword">Password:</label>
+                    <input type="password" class="form-control" id="xpassword" placeholder="Masukkan Password"
+                           name="xpassword">
+                </div>
+                <button type="submit" class="btn btn-default">Login</button>
+            </form>
+            <br>
         </div>
-        <button type="submit" class="btn btn-default">Login</button>
-    </form>
-    <br>
-
+    </div>
 </div>
-
 
 
 </body>

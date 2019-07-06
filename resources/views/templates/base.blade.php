@@ -23,8 +23,8 @@
                 </div>
             </a>
             <div class="col-md-6 col-md-push-4 ">
-                <p class="text-right " style=";color: white; font-family: tahoma; font-weight: bold;">
-                    <a href="{{url('/#')}}" style="text-align:right;font-size:xx-large; color: greenyellow; text-decoration: none;"><em>SMK MULI MEDIA MANDIRI</em></a></p>
+                <p class="text-right " style=";color: white; font-family: 'Literata', serif; font-weight: bold;">
+                    <a href="{{url('/#')}}" style="text-align:right;font-size:xx-large; color: #6ab04c; text-decoration: none;"><em>SMK MULI MEDIA MANDIRI</em></a></p>
                 <!--<p class="text-right header-budiluhur-2" style="margin-top: -10px;  color: white; font-family: tahoma;"><em>Budi Luhur<br><small>Cerdas Berbudi Luhur</small></em></p>-->
             </div>
         </div>

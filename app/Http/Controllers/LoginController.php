@@ -27,7 +27,7 @@ class LoginController extends Controller
 
         $check = Validator::make($request->input(), [
 //			'_token' => 'required',
-            'xuid' => 'required|numeric|digits_between:1,10',
+            'xuid' => 'required',
             'xpassword' => 'required'
         ]);
         //class metodh
@@ -77,7 +77,7 @@ class LoginController extends Controller
 
         } else {
 //            return 'gklolos';
-            session()->flash('notif', 'Format username harus angka');
+            session()->flash('notif', 'Form tidak boleh kosong');
             return view('login');
 
         }

@@ -25,7 +25,7 @@ Route::post('lihat/persemester', 'persemester@carikelas');
 
 
 Route::get('lihat/persemester/{id}/{smes}', 'persemester@data');
-//Route::get('print/persemester/{id}/{smes}', 'perbulan@data2');
+Route::get('print/persemester/{id}/{smes}', 'persemester@data2');
 Route::prefix('auth')
 	->group(function () {
 

@@ -12,10 +12,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Web Penerimaan Mahasiswa Baru - Universitas Budi Luhur</title>
+    <title>SMK Multi Media Mandiri</title>
     <!-- Bootstrap Core CSS -->
     <link href="{{asset('assets/css/bootstrap.css')}}" rel="stylesheet">
-    <link rel="shortcut icon" href="img/logobl.png')}}">
 
 
     <style type="text/css">
@@ -83,7 +82,7 @@
             }
 
             .open-sans {
-                font-family: "Open Sans", Arial;
+                font-family: 'Literata', serif;
             }
 
             .modal {
@@ -116,10 +115,8 @@
     <!-- Custom CSS -->
     <link href="{{asset('assets/dist/css/sb-admin-2.css')}}" rel="stylesheet">
 
-    <link href="{{asset('assets/bower_components/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet"
-          type="text/css">
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Libre+Franklin');
+        @import url('https://fonts.googleapis.com/css?family=Literata&display=swap');
     </style>
 
     <!-- costum css auto num -->
@@ -159,18 +156,13 @@
     <script src="{{asset('assets/js/bootstrap-datetimepicker.min.js')}}"></script>
     <script src="{{asset('assets/css/pace/pace.js')}}"></script>
     <link href="{{asset('assets/css/pace/themes/loading_bar.css')}}" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha38<style>
-@import url('https://fonts.googleapis.com/css?family=Libre+Franklin');
-</style>4-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
           crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet"/>
 
     <!-- js bootstrap toogle -->
     <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
-    <!--Datepicker Bootstrap-->
-    <script src="{{asset('assets/js/bootstrap-datepicker.min.js')}}" type="text/javascript"></script>
-    <script src="{{asset('assets/js/bootstrap-datepicker.js')}}" type="text/javascript"></script>
 
 
 </head>

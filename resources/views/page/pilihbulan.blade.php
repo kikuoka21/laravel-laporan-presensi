@@ -23,7 +23,7 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="sel1">Pilih semester:</label>
+                            <label for="sel1">Pilih bulan</label>
 
                             <select class="form-control" name="bulan">
                                 <?php $a = 1; ?>
@@ -61,9 +61,9 @@
                                 </td>
                                 <td>
                                     <a style="background: #fff;" target="_blank"
-                                       href="/lihat/perbulan/{{$datakela->id}}/{{$result['tanggalnya']}}">lihat</a><br>
+                                       href="/lihat/perbulan/{{$datakela->id}}/{{$result['tanggalnya']}}">Lihat</a><br>
                                     <a style="background: #fff;" target="_blank"
-                                       href="/print/perbulan/{{$datakela->id}}/{{$result['tanggalnya']}}">print</a>
+                                       href="/print/perbulan/{{$datakela->id}}/{{$result['tanggalnya']}}">Unduh</a>
                                 </td>
                                 <td>
 

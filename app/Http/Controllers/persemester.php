@@ -66,12 +66,13 @@ class persemester
 
 			$result = [
 				'nama' => $request->session()->get("nama"),
+                'tahun' => \Carbon\Carbon::now()->format('Y') ,
 				'hari_ini' => (new \App\Modul\tool)->gettanggal(),
 				'tanggalnya' => $tanggal,
 				'smes'=>  $request->input('semester'),
 				'flag' => $flag,
 //            'datakelas' => json_encode($input)
-				'datakelas' => $input->data
+				'datakelas' => $input
 			];
 
 //                //tag sesuaikan
@@ -83,6 +84,57 @@ class persemester
 	}
 
 	public function data(Request $request, $id, $smes)
+	{
+		if ($request->session()->has('username') && $request->session()->has('token')) {
+
+
+			$curl = new Panggilan();
+			$input = $curl->SendRequest("api/admin/laporan-smes", [
+				'x1d' => $request->session()->get("username"),
+				'token' => $request->session()->get("token"),
+				'key' => $request->ip(),
+				'smes' => substr($smes, 0, 2),
+				'id_kelas' => $id,
+				'type' => 'www'
+			]);
+			$flag = '0';
+
+			$awal = Carbon::now()->toDateString();
+			$akhir = Carbon::now()->toDateString();
+			if ($input->code != 'OK4') {
+				if ($input->code == 'TOKEN2' || $input->code == 'TOKEN1') {
+					$request->session()
+						->flush();
+					$tool = new tool();
+					session()->flash('notif', $tool->pesan($input->code));
+					return redirect('auth/login');
+				} else {
+					session()->flash('notif', $input->code);
+					$flag = '1';
+
+				}
+			}else{
+				$awal= $input->periode->awal;
+				$akhir= $input->periode->akhir;
+			}
+			$result = [
+				'nama' => $request->session()->get("nama"),
+				'hari_ini' => (new \App\Modul\tool)->gettanggal(),
+				'username' => $request->session()->get("username"),
+				'awal' => (new \App\Modul\tool)->geubahtanggalbln($awal),
+				'akhir' => (new \App\Modul\tool)->geubahtanggalbln($akhir),
+//                'head_tgl' => $tanggal,
+				'isi' => $flag,
+				'data' => $input,
+			];
+//			return json_encode($result);
+			return view('page.semesteran')->with('result', $result);
+		} else {
+			return redirect('auth/login');
+		}
+
+	}
+	public function data2(Request $request, $id, $smes)
 	{
 		if ($request->session()->has('username') && $request->session()->has('token')) {
 
@@ -127,7 +179,9 @@ class persemester
 				'data' => $input,
 			];
 //			return json_encode($result);
-			return view('page.semesteran')->with('result', $result);
+//			return view('page.semesteran')->with('result', $result);
+            $pdf = PDF::loadView('page.semesteran', compact('result'))->setPaper('A4', 'landscape');
+            return $pdf->download($id.' Laporan Smester '.$smes.'.pdf');
 		} else {
 			return redirect('auth/login');
 		}

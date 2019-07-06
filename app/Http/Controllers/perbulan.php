@@ -70,7 +70,6 @@ class perbulan
             'hari_ini' => (new \App\Modul\tool)->gettanggal(),
             'tanggalnya' => $tanggal,
             'isikelas' => $flag,
-//            'datakelas' => json_encode($input)
             'datakelas' => $input->data
         ];
 
@@ -111,7 +110,7 @@ class perbulan
                     session()->flash('notif', $tool->pesan($input->code));
                     return redirect('auth/login');
                 } else {
-                    session()->flash('notif', $input->code);
+                    session()->flash('notiff', $input->code);
                     $flag = '1';
 
                 }
@@ -170,7 +169,7 @@ class perbulan
                 'data' => $input,
             ];
             $pdf = PDF::loadView('page.bulanan', compact('result'))->setPaper('A4', 'landscape');
-            return $pdf->download($id.$tanggal.'.pdf');
+            return $pdf->download($id.' Laporan Bulan '.$tanggal.'.pdf');
         } else {
             return redirect('auth/login');
         }

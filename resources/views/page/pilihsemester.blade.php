@@ -12,7 +12,7 @@
                     <form method='post'>
                         {{csrf_field()}}
                         <div class="form-group">
-                            <label for="sel1">Pilih Tahun ajar :</label>
+                            <label for="sel1">Pilih Tahun ajar</label>
 
                             <select class="form-control" name="tahun_ajar">
 								<?php $thn = $result['tahun'];
@@ -27,8 +27,8 @@
                             <label for="sel1">pilih Semester</label>
 
                             <select class="form-control" name="semester">
-                                <option value="ga">Ganjil</option>
-                                <option value="ge">Genap</option>
+                                <option value="Ganjil">Ganjil</option>
+                                <option value="Genap">Genap</option>
 
                             </select>
                         </div>
@@ -52,16 +52,16 @@
                         </thead>
 
                         <tbody>
-                        @foreach($result['datakelas'] as $datakela)
+                        @foreach($result['datakelas']->data as $datakela)
                             <tr>
                                 <td>
                                     {{$datakela->nama_kelas}}
                                 </td>
                                 <td>
                                     <a style="background: #fff;" target="_blank"
-                                       href="/lihat/persemester/{{$datakela->id}}/{{$result['smes']}}">lihat</a><br>
+                                       href="/lihat/persemester/{{$datakela->id}}/{{$result['smes']}}">Lihat {{$result['smes']}}</a><br>
                                     <a style="background: #fff;" target="_blank"
-                                       href="/lihat/persemester/print/{{$datakela->id}}/{{$result['tanggalnya']}}">print</a>
+                                       href="/print/persemester/{{$datakela->id}}/{{$result['smes']}}">Unduh</a>
                                 </td>
                                 <td>
 

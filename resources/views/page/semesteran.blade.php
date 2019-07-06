@@ -4,9 +4,9 @@
 
 </head>
 <body>
-@if (Session::has('notif'))
+@if (Session::has('notiff'))
     <div align="center">
-        <h2>{{session()->get('notif')}}</h2>
+        <h2>{{session()->get('notiff')}}</h2>
     </div>
 @endif
 <style>
