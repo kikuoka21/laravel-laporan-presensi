@@ -22,7 +22,7 @@
     @endif
     <div align="center">
         <div style="width: 50%" align="left">
-            <h2>Login Guru SMK MUlti Media Mandiri</h2>
+            <h2>Login Guru SMK Multi Media Mandiri</h2>
             <form method="post">
                 {{csrf_field()}}
                 <div class="form-group">

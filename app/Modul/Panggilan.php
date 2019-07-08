@@ -18,10 +18,10 @@ class Panggilan
 
     public function SendRequest($url, $data)
     {
-        $api = 'http://192.168.0.10:8000/';
+//        $api = 'http://192.168.0.10:8000/';
 //        $api = 'http://192.168.0.17:8000/';
 //        $api = 'http://192.168.0.18:8000/';
-//        $api = 'http://192.168.12.17:8000/';
+        $api = 'http://192.168.12.17:8000/';
 //        $api = 'http://192.168.12.33:8000/';
 //        $api = 'http://192.168.43.242:8000/';
         try {
@@ -44,9 +44,11 @@ class Panggilan
             return $json;
         } catch (\Exception $e) {
 //            return $e;
-            return [
-                'code' => 'Telah Terjadi kesalahan pada http request kepada API'
+	        $json = [
+	        'code' => 'Telah Terjadi kesalahan pada http request kepada API'
             ];
+
+	        return json_decode($json);
         }
     }
 

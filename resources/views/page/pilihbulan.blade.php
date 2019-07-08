@@ -48,7 +48,7 @@
                                 Nama Kelas
                             </th>
                             <th>
-                                perintah
+                                Perintah
                             </th>
                         </tr>
                         </thead>

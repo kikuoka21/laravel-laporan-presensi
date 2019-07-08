@@ -24,7 +24,7 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="sel1">pilih Semester</label>
+                            <label for="sel1">Pilih Semester</label>
 
                             <select class="form-control" name="semester">
                                 <option value="Ganjil">Ganjil</option>
@@ -46,7 +46,7 @@
                                 Nama Kelas
                             </th>
                             <th>
-                                perintah
+                                Perintah
                             </th>
                         </tr>
                         </thead>
