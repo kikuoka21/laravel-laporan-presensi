@@ -59,7 +59,7 @@
                                 </td>
                                 <td>
                                     <a style="background: #fff;" target="_blank"
-                                       href="/lihat/persemester/{{$datakela->id}}/{{$result['smes']}}">Lihat {{$result['smes']}}</a><br>
+                                       href="/lihat/persemester/{{$datakela->id}}/{{$result['smes']}}">Lihat</a><br>
                                     <a style="background: #fff;" target="_blank"
                                        href="/print/persemester/{{$datakela->id}}/{{$result['smes']}}">Unduh</a>
                                 </td>

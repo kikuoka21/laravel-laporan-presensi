@@ -4,14 +4,14 @@
     <title>Login</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="{{asset('assets/css/bootstrap.css')}}" rel="stylesheet">
 </head>
 <body>
 
-<div class="container">
+<div class="col-lg-12" align="center">
     @if (Session::has('notif'))
         <div class="row" style="padding-top: 10px">
             <div class="alert alert-danger">
@@ -20,8 +20,8 @@
             </div>
         </div>
     @endif
-    <div align="center">
-        <div style="width: 50%" align="left">
+    <div align="center" style="width: 50%;border-radius: 20px;background: #dddddd">
+        <div style="width: 85%;margin: 40px; padding: 10px" align="left">
             <h2>Login Guru SMK Multi Media Mandiri</h2>
             <form method="post">
                 {{csrf_field()}}
