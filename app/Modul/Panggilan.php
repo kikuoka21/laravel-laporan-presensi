@@ -10,6 +10,7 @@ namespace App\Modul;
 
 use App\Helper\UBLCore;
 use App\Helper\UBLCurl;
+use http\Exception;
 use Illuminate\Http\Request;
 use SebastianBergmann\Environment\Console;
 
@@ -18,7 +19,7 @@ class Panggilan
 
     public function SendRequest($url, $data)
     {
-        $api = 'http://192.168.0.10:8000/';
+        $api = 'http://192.168.1.6:8000/';
 //        $api = 'http://192.168.0.17:8000/';
 //        $api = 'http://192.168.0.18:8000/';
 //        $api = 'http://192.168.12.17:8000/';
@@ -42,7 +43,7 @@ class Panggilan
             $json = json_decode($resp);
 
             return $json;
-        } catch (\Exception $e) {
+        } catch (Exception $e) {
 //            return $e;
 	        $json = [
 	        'code' => 'Telah Terjadi kesalahan pada http request kepada API'

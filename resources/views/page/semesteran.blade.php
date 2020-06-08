@@ -17,6 +17,12 @@
 
 
 </style>
+
+<?php echo 'aaaaaa  ';
+print_r(json_encode($result));
+
+?>
+
 @if($result['isi']=='0')
 
     <div class="col-lg-12 ">
@@ -28,7 +34,8 @@
         <h3 align="left">
             Kelas : {{$result['data']->data->nama_kelas}}<br>
 
-            Tahun Ajar : {{substr($result['data']->data->thn_ajar,0,4).'/'.substr($result['data']->data->thn_ajar,4)}}<br>
+            Tahun Ajar : {{substr($result['data']->data->thn_ajar,0,4).'/'.substr($result['data']->data->thn_ajar,4)}}
+            <br>
             Wali Kelas : {{$result['data']->data->wali}}
 
         </h3>
@@ -58,32 +65,32 @@
                 Telat
             </th>
         </tr>
-		<?php $i = 0?>
+        <?php $i = 0?>
         @foreach($result['data']->siswa as $datasiswa)
-            <tr @if($i%2 == 0) bgcolor="#d9efe5"  @endif >
-                    <td style="padding-left: 15px;padding-right: 15px " align="right">
-                        {{$datasiswa->nis}}
-                    </td>
-                    <td style="padding-left: 15px ;padding-right: 15px ">
-                        {{$datasiswa->nama}}
-                    </td>
-                    <td style="padding-left: 15px ;padding-right: 15px " align="center">
-                        {{$datasiswa->alpha}}
-                    </td>
-                    <td style="padding-left: 15px ;padding-right: 15px " align="center">
-                        {{$datasiswa->izin}}
-                    </td>
-                    <td style="padding-left: 15px ;padding-right: 15px " align="center">
-                        {{$datasiswa->sakit}}
-                    </td>
-                    <td style="padding-left: 15px ;padding-right: 15px " align="center">
-                        {{$datasiswa->telat}}
-                    </td>
+            <tr @if($i%2 == 0) bgcolor="#d9efe5" @endif >
+                <td style="padding-left: 15px;padding-right: 15px " align="right">
+                    {{$datasiswa->nis}}
+                </td>
+                <td style="padding-left: 15px ;padding-right: 15px ">
+                    {{$datasiswa->nama}}
+                </td>
+                <td style="padding-left: 15px ;padding-right: 15px " align="center">
+                    {{$datasiswa->alpha}}
+                </td>
+                <td style="padding-left: 15px ;padding-right: 15px " align="center">
+                    {{$datasiswa->izin}}
+                </td>
+                <td style="padding-left: 15px ;padding-right: 15px " align="center">
+                    {{$datasiswa->sakit}}
+                </td>
+                <td style="padding-left: 15px ;padding-right: 15px " align="center">
+                    {{$datasiswa->telat}}
+                </td>
 
 
-                </tr>
-		    <?php $i++?>
-            @endforeach
+            </tr>
+            <?php $i++?>
+        @endforeach
     </table>
     <div align="center">Dibuat Oleh<br><br><br><br>{{$result['nama']}}<br>NIP. {{$result['username']}}</div>
 

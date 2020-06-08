@@ -11,27 +11,29 @@ namespace App\Modul;
 
 //	use Illuminate\Http\Request;
 
+use Carbon\Carbon;
+
 class tool
 {
     public function gettanggal()
     {
-        return $this->hari_ini() . $this->bulan(\Carbon\Carbon::now()->format('F')) .
-            \Carbon\Carbon::now()->format(' Y');
+        return $this->hari_ini() . $this->bulan(Carbon::now()->format('F')) .
+            Carbon::now()->format(' Y');
     }
     public function geubahtanggal($tgl)
     {
-        return $this->bulan(\Carbon\Carbon::create($tgl)->format('F')) .
-            \Carbon\Carbon::now()->format(' Y');
+        return $this->bulan(Carbon::create($tgl)->format('F')) .
+            Carbon::now()->format(' Y');
     }
     public function geubahtanggalbln($tgl)
     {
-        return \Carbon\Carbon::create($tgl)->format('d ').$this->bulan(\Carbon\Carbon::create($tgl)->format('F')) .
-            \Carbon\Carbon::now()->format(' Y');
+        return Carbon::create($tgl)->format('d ').$this->bulan(Carbon::create($tgl)->format('F')) .
+            Carbon::create($tgl)->format(' Y');
     }
 
     private function hari_ini()
     {
-        $hari = substr(\Carbon\Carbon::now()->format('l'), 0, 3);
+        $hari = substr(Carbon::now()->format('l'), 0, 3);
         switch ($hari) {
             case 'Sun':
                 $hari_ini = "Minggu";
@@ -62,11 +64,11 @@ class tool
                 break;
 
             default:
-                $hari_ini = \Carbon\Carbon::now()->format('l');
+                $hari_ini = Carbon::now()->format('l');
                 break;
         }
 
-        return $hari_ini . \Carbon\Carbon::now()->format(', d ');
+        return $hari_ini . Carbon::now()->format(', d ');
 
     }
 

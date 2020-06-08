@@ -23,9 +23,9 @@ class perbulan
             $bulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
             $result = [
                 'nama' => $request->session()->get("nama"),
-                'hari_ini' => (new \App\Modul\tool)->gettanggal(),
+                'hari_ini' => (new tool)->gettanggal(),
                 'bulan' => $bulan,
-                'tahun' => \Carbon\Carbon::now()->format('Y'),
+                'tahun' => Carbon::now()->format('Y'),
 
                 'isikelas' => '1'
             ];
@@ -51,9 +51,14 @@ class perbulan
             'tgl' => $tanggal,
             'type' => $type
         ]);
-
         if ($input->code == 'OK4') {
-            $flag = '0';
+            $result = [
+                'nama' => $request->session()->get("nama"),
+                'hari_ini' => (new tool)->gettanggal(),
+                'tanggalnya' => $tanggal,
+                'isikelas' =>  '0',
+                'datakelas' => $input->data
+            ];
         } else if ($input->code == 'TOKEN2' || $input->code == 'TOKEN1') {
             $request->session()
                 ->flush();
@@ -62,16 +67,18 @@ class perbulan
             return redirect('auth/login');
         } else {
             session()->flash('notif', $input->code);
-            $flag = '1';
+            $bulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+            $result = [
+                'nama' => $request->session()->get("nama"),
+                'hari_ini' => (new tool)->gettanggal(),
+                'bulan' => $bulan,
+                'tahun' => Carbon::now()->format('Y'),
+
+                'isikelas' => '1'
+            ];
         }
 
-        $result = [
-            'nama' => $request->session()->get("nama"),
-            'hari_ini' => (new \App\Modul\tool)->gettanggal(),
-            'tanggalnya' => $tanggal,
-            'isikelas' => $flag,
-            'datakelas' => $input->data
-        ];
+
 
 //                //tag sesuaikan
         return view('page.pilihbulan')->with('result', $result);
@@ -117,9 +124,9 @@ class perbulan
             }
             $result = [
                 'nama' => $request->session()->get("nama"),
-                'hari_ini' => (new \App\Modul\tool)->gettanggal(),
+                'hari_ini' => (new tool)->gettanggal(),
                 'username' => $request->session()->get("username"),
-                'head_tgl' => (new \App\Modul\tool)->geubahtanggal($tanggal),
+                'head_tgl' => (new tool)->geubahtanggal($tanggal),
 //                'head_tgl' => $tanggal,
                 'isi' => $flag,
                 'data' => $input,
@@ -161,9 +168,9 @@ class perbulan
             }
             $result = [
                 'nama' => $request->session()->get("nama"),
-                'hari_ini' => (new \App\Modul\tool)->gettanggal(),
+                'hari_ini' => (new tool)->gettanggal(),
                 'username' => $request->session()->get("username"),
-                'head_tgl' => (new \App\Modul\tool)->geubahtanggal($tanggal),
+                'head_tgl' => (new tool)->geubahtanggal($tanggal),
 //                'head_tgl' => $tanggal,
                 'isi' => $flag,
                 'data' => $input,

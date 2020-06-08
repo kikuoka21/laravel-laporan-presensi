@@ -15,12 +15,12 @@
                             <label for="sel1">Pilih Tahun ajar</label>
 
                             <select class="form-control" name="tahun_ajar">
-								<?php $thn = $result['tahun'];
-								for ($thn ; $thn >= 2014; $thn--){?>
-								<?php $aa = $thn + 1;?>
+                                <?php $thn = $result['tahun'];
+                                for ($thn ; $thn >= 2014; $thn--){?>
+                                <?php $aa = $thn + 1;?>
                                 <option value="{{$thn}}">{{$thn.'/'.$aa}}</option>
 
-								<?php }?>
+                                <?php }?>
                             </select>
                         </div>
                         <div class="form-group">
@@ -76,5 +76,6 @@
             </div>
         </div>
     </div>
+
 
 @endsection
