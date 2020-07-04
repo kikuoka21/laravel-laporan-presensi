@@ -11,6 +11,8 @@
 |
 */
 
+use Illuminate\Http\Request;
+
 Route::get('/', 'HomeController');
 
 Route::get('lihat/perbulan/{id}/{tanggal}', 'perbulan@data');

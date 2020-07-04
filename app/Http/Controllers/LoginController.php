@@ -48,6 +48,7 @@ class LoginController extends Controller
                 'type' => $type
             ]);
 //        return json_encode($input);
+//            dd($input);
             if ($input->code == 'OK4') {
                 if ($input->data->status == '1') {
                     $token = $input->data->token;
@@ -84,4 +85,5 @@ class LoginController extends Controller
 
 
     }
+
 }

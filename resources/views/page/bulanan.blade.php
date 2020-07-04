@@ -26,7 +26,8 @@
             {{$result['head_tgl']}}</h2>
         <h3 align="left">
             Kelas : {{$result['data']->data->nama_kelas}}<br>
-            Tahun Ajar : {{substr($result['data']->data->thn_ajar,0,4).'/'.substr($result['data']->data->thn_ajar,4)}}<br>
+            Tahun Ajar : {{substr($result['data']->data->thn_ajar,0,4).'/'.substr($result['data']->data->thn_ajar,4)}}
+            <br>
             Wali Kelas : {{$result['data']->data->wali}}
 
         </h3>
@@ -41,7 +42,8 @@
             <th style="padding-left: 15px;padding-right: 15px" rowspan="2">
                 Nama
             </th>
-            <th style="padding-left: 15px;padding-right: 15px" colspan="{{count($result['data']->presensi[0]->kehadiran)}}" align="center">
+            <th style="padding-left: 15px;padding-right: 15px"
+                colspan="{{count($result['data']->presensi[0]->kehadiran)}}" align="center">
                 Tanggal
             </th>
         </tr>
@@ -58,7 +60,7 @@
 
         @foreach($result['data']->presensi as $datasiswa)
             <tr>
-                <td style="padding-left: 15px;padding-right: 15px " align="right">
+                <td style="padding-left: 15px;padding-right: 15px " align="center">
                     {{$datasiswa->nis}}
                 </td>
                 <td style="padding-left: 15px ;padding-right: 15px ">
@@ -84,12 +86,71 @@
                 @endfor
 
 
-
             </tr>
         @endforeach
     </table>
     <br>
+    <table style="border-collapse: separate; border-spacing:10px;border: none;">
+        <h2 >Keterangan</h2>
+        <tr style="border: none;">
+            <td style="border: none;width: 20px;background: #000000">
+            </td>
+            <td style="border: none;">
+                :
+            </td>
+            <td style="border: none;">
+                Hari libur
+            </td>
+        </tr>
+        <tr style="border: none;">
+            <td style="border: none;width: 20px;background: #ac2925">
+            </td>
+            <td style="border: none;">
+                :
+            </td>
+            <td style="border: none;">
+                Tidak masuk
+            </td>
+        </tr>
+        <tr style="border: none;">
+            <td style="width: 20px;text-align: center">
 
+            </td>
+            <td style="border: none;">
+                :
+            </td>
+            <td style="border: none;">
+                Hadir
+            </td>
+        </tr>
+        <tr style="border: none;">
+            <td style="width: 20px;text-align: center">
+                S
+            </td>
+            <td style="border: none;">
+                :
+            </td>
+            <td style="border: none;">
+                Sakit
+            </td>
+        </tr>
+        <tr style="border: none;">
+            <td style="width: 20px;text-align: center">
+                I
+            </td>
+            <td style="border: none;">
+                :
+            </td>
+            <td style="border: none;">
+                Izin
+            </td>
+        </tr>
+
+    </table>
+
+
+    <br>
+    <br>
     <div align="center">Dibuat Oleh<br><br><br><br>{{$result['nama']}}<br>NIP. {{$result['username']}}</div>
 
 

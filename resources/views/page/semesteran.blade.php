@@ -18,8 +18,9 @@
 
 </style>
 
-<?php echo 'aaaaaa  ';
-print_r(json_encode($result));
+<?php
+//echo 'aaaaaa  ';
+//print_r(json_encode($result));
 
 ?>
 
@@ -61,14 +62,14 @@ print_r(json_encode($result));
             <th style="padding-left: 15px;padding-right: 15px;width: 4%" align="center">
                 Sakit
             </th>
-            <th style="padding-left: 15px;padding-right: 15px;width: 4%" align="center">
-                Telat
-            </th>
+{{--            <th style="padding-left: 15px;padding-right: 15px;width: 4%" align="center">--}}
+{{--                Telat--}}
+{{--            </th>--}}
         </tr>
         <?php $i = 0?>
         @foreach($result['data']->siswa as $datasiswa)
             <tr @if($i%2 == 0) bgcolor="#d9efe5" @endif >
-                <td style="padding-left: 15px;padding-right: 15px " align="right">
+                <td style="padding-left: 15px;padding-right: 15px " align="center">
                     {{$datasiswa->nis}}
                 </td>
                 <td style="padding-left: 15px ;padding-right: 15px ">
@@ -83,9 +84,9 @@ print_r(json_encode($result));
                 <td style="padding-left: 15px ;padding-right: 15px " align="center">
                     {{$datasiswa->sakit}}
                 </td>
-                <td style="padding-left: 15px ;padding-right: 15px " align="center">
-                    {{$datasiswa->telat}}
-                </td>
+{{--                <td style="padding-left: 15px ;padding-right: 15px " align="center">--}}
+{{--                    {{$datasiswa->telat}}--}}
+{{--                </td>--}}
 
 
             </tr>

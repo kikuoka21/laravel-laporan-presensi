@@ -31,7 +31,7 @@
                                 <th style="text-align:center;"scope="col">Alpha</th>
                                 <th style="text-align:center;"scope="col">Izin</th>
                                 <th style="text-align:center;"scope="col">Sakit</th>
-                                <th style="text-align:center;"scope="col">Telat</th>
+{{--                                <th style="text-align:center;"scope="col">Telat</th>--}}
                             </tr>
                             </thead>
                             <tbody>
@@ -40,7 +40,7 @@
                                 <td>{{$result['data']->alpha}} siswa</td>
                                 <td>{{$result['data']->izin}} siswa</td>
                                 <td>{{$result['data']->sakit}} siswa</td>
-                                <td>{{$result['data']->telat}} siswa</td>
+{{--                                <td>{{$result['data']->telat}} siswa</td>--}}
                             </tr>
                             </tbody>
                         </table>

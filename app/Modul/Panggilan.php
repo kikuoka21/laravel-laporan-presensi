@@ -19,7 +19,7 @@ class Panggilan
 
     public function SendRequest($url, $data)
     {
-        $api = 'http://192.168.1.6:8000/';
+        $api = 'http://192.168.1.7:8000/';
 //        $api = 'http://192.168.0.17:8000/';
 //        $api = 'http://192.168.0.18:8000/';
 //        $api = 'http://192.168.12.17:8000/';

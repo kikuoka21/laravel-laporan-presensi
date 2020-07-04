@@ -1,4 +1,4 @@
-@extends('templates.base', ['titlePage' => __('Pilih Tanggal dan Kelas'), 'nama'=> __($result['nama']),
+@extends('templates.base', ['titlePage' => __('Pilih Bulan dan Kelas'), 'nama'=> __($result['nama']),
 'tanggal'=> __($result['hari_ini'])])
 
 @section('content')
