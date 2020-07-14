@@ -19,7 +19,7 @@ class Panggilan
 
     public function SendRequest($url, $data)
     {
-        $api = 'http://192.168.1.7:8000/';
+        $api = 'http://192.168.1.3:8000/';
 //        $api = 'http://192.168.0.17:8000/';
 //        $api = 'http://192.168.0.18:8000/';
 //        $api = 'http://192.168.12.17:8000/';
@@ -30,7 +30,7 @@ class Panggilan
             curl_setopt_array($curl, [
                 CURLOPT_SSL_VERIFYPEER => false,
                 CURLOPT_RETURNTRANSFER => true,
-                CURLOPT_URL => $api.$url,
+                CURLOPT_URL => $api . $url,
                 CURLOPT_POST => true,
                 CURLOPT_POSTFIELDS => [
                     'parsing' => json_encode($data)
@@ -38,22 +38,32 @@ class Panggilan
             ]);
 
             $resp = curl_exec($curl);
-            curl_close($curl);
 
-            $json = json_decode($resp);
+            $resultStatus = curl_getinfo($curl, CURLINFO_HTTP_CODE);;
+            if ($resultStatus==200) {
 
-            return $json;
+                curl_close($curl);
+                $json = json_decode($resp);
+
+                return $json;
+            } else {
+                curl_close($curl);
+                return json_decode('{"code":"Telah Terjadi kesalahan pada http request kepada API"}');
+            }
+
+
         } catch (Exception $e) {
 //            return $e;
-	        $json = [
-	        'code' => 'Telah Terjadi kesalahan pada http request kepada API'
+            $json = [
+                'code' => 'Telah Terjadi kesalahan pada http request kepada API'
             ];
 
-	        return json_decode($json);
+            return json_decode($json);
         }
     }
 
-    public function genPassword($pass){
+    public function genPassword($pass)
+    {
 
         return md5('%' . md5($pass) . ' secret keynya ad@l@h al-kamal!');
     }

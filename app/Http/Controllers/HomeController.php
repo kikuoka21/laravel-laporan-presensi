@@ -26,7 +26,7 @@ class HomeController extends Controller
                 'key' => $key,
                 'type' => $type
             ]);
-dd($input);
+//dd($input);
             if ($input->code == 'OK4') {
 
                 $listkelas = [];
